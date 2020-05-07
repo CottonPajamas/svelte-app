@@ -68,7 +68,7 @@
 				<b>3. Simplifying code reuse: {result} | {result} | {result} | {result}</b>
 				<br>
 				<cite>
-					Unfortunately, the above code in 2 is going to scale very well. If you want to show that same value somewhere else in the page,
+					Unfortunately, the above code in 2 is not going to scale very well. If you want to show that same value somewhere else in the page,
 					you will have to duplicate the logic everywhere. i.e.
 					<br>
 					&lsaquo;p&rsaquo;Adding logic to our random output: &lbrace; Math.round(rando) ? '🤗' : '👻' &rbrace;&lsaquo;/p&rsaquo;
