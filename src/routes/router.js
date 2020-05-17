@@ -22,3 +22,6 @@ export default router;
 // So the object is a constant. But the value that contains it i.e. '/' or 'one' or etc.. can be changed.
 // To see how the value is being set after initialization, refer to RouterLink.svelte.
 export const curRoute = writable('/');
+// This is to capture and set a constant variable containing the primary/main URL for the applicaton.
+// Used for updating the history in RouterLink.svelte, such that the URL path will always be the same as the landing URL.
+export const originalPath = window.location.href;
