@@ -1,7 +1,7 @@
-import Home from './Home.svelte';
-import One from './One.svelte';
-import Two from './Two.svelte';
-import Three from './Three.svelte';
+import Home from '../components/Home.svelte';
+import One from '../components/One.svelte';
+import Two from '../components/Two.svelte';
+import Three from '../components/Three.svelte';
 import { writable } from 'svelte/store';
 // ^ svelte/store here, simplifies  the creation of an object with a subscribe method.
 // This allows interested parties to be notified whenever the store value changes.

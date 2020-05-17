@@ -6,11 +6,15 @@
  -->
  
 <script>
-	import router, { curRoute } from './router.js';
-	import RouterLink from './RouterLink.svelte';
+	import router, { curRoute } from './routes/router.js';
+	import RouterLink from './routes/RouterLink.svelte';
 	
 	function handlerBackNavigation(event){
-		curRoute.set(event.state.path)
+		if (!event || !event.state || !event.state.path) {
+			curRoute.set('/')		// If null, go back to main page.
+		} else {
+			curRoute.set(event.state.path)
+		}
 	}
 
 	// Using the 'export' keyword allows a variable to be passed down from the parent component. Here the parent is main.js where we specify the property 'name' = 'world'.
