@@ -25,3 +25,4 @@ export const curRoute = writable('/');
 // This is to capture and set a constant variable containing the primary/main URL for the applicaton.
 // Used for updating the history in RouterLink.svelte, such that the URL path will always be the same as the landing URL.
 export const originalPath = window.location.href;
+console.log(originalPath);
