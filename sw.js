@@ -8,7 +8,7 @@ var preLoad = function(){
     console.log("caching index and important routes");
     // Need to explicitly specif all the assets that you woul like to cache. Can specify dynamic assets as well like: '/about'
     return cache.addAll(
-      ["/build/bundle.css", "/build/bundle.css.map", "/build/bundle.js", "/build/bundle.js.map", "/", "/favicon.png", "/global.css", "/index.html", "/offline.html"]
+      ["/build/bundle.css", "/build/bundle.css.map", "/build/bundle.js", "/build/bundle.js.map", "/", "/global.css", "/index.html", "/offline.html"]
     );
   });
 };
