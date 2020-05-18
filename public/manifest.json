@@ -3,7 +3,6 @@
   "short_name": "Svelty",
   "theme_color": "#122e45",
   "background_color": "#2196f3",
-  "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/svelte-app",
