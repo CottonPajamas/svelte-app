@@ -24,17 +24,17 @@
 	export let name;
 </script>
 
-	<svelte:window on:popstate={handlerBackNavigation} />
-
-
-<main>
-	<h1>Hello {name}!</h1>
-	<div>
+<!-- Event handler to handle 'back' button events -->
+<svelte:window on:popstate={handlerBackNavigation} />
+<main class="text-center px-1 m-0">
+	<h1 class="uppercase font-hairline m-0 p-4 text-red-600 text-5xl md:text-6xl lg:text-6xl">Hello {name}!</h1>
+	<div class="font-medium text-red-800 text-sm md:text-base lg:text-base pl-4 pr-4">
 		<RouterLink page={{path: '/', name: 'Home'}} />&emsp;&emsp;|&emsp;&emsp;
 		<RouterLink page={{path: '/one', name: 'Page One'}} />&emsp;&emsp;|&emsp;&emsp;
 		<RouterLink page={{path: '/two', name: 'Page Two'}} />&emsp;&emsp;|&emsp;&emsp;
 		<RouterLink page={{path: '/three', name: 'Page Three'}} />
 	</div>
+	<br>
 	<div id="pageContent">
 		<!-- Page component updates here -->
 		<svelte:component this={router[$curRoute]} />
@@ -42,19 +42,19 @@
 </main>
 
 <style>
-	main {
+	/* main {
 		text-align: center;
 		padding: 1em;
-		max-width: 240px;
+		max-width: 80%;
 		margin: 0 auto;
-	}
+	} */
 
-	h1 {
+	/* h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
-	}
+	} */
 
 	@media (min-width: 640px) {
 		main {
