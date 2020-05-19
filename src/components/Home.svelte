@@ -2,4 +2,4 @@
 
 </script>
 
-<h2>This is the home page.</h2>
+<h2 class="text-red-500 text-xs italic">This is the home page.</h2>

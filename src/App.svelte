@@ -3,6 +3,9 @@
 	- For Svelte, the focus of our work shoudl be on the src folder only.
 	- As the public folder is where the static and built files will be stored at.
 	- App.svelte is our root component.
+	- For running svelte in localhost: npm run dev
+	- To build svelte project into production-ready static files: npm run build		(Then pick up all the files created in the public folder.)
+	- 
  -->
  
 <script>
