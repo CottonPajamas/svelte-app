@@ -7,10 +7,20 @@
 </div>
 <br>
 
-<div class="flex flex-col bg-gray-200 m-5">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="card">
+	<div class="container">
+		<p><b>1. Just outputting a simple private variable: </b></p>
+		<div class="notes">
+			<code>
+				-- Done in the script portion.<br>
+				let rando = 0;
+				<br><br>-- Done in the html portion.<br>
+				Just outputting a simple private variable: &lbrace; rando &rbrace;
+			</code>
+		</div>
+		<!-- Add button to invoke an event that will change our 'rando' value. -->
+		<br><button disabled>Randomize me!</button><br>
+	</div>
 </div>
 
 <style>

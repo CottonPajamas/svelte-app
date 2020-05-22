@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
+
+/* This is how you add custom global css using tailwind. The example below for instance, applies the specified css to all 'code' tag elements. */
+code {
+  @apply text-gray-800 text-xs;
+}
+
+/* You can also add custom native css like so. Just use normal css without the '@apply'. */
+cite {
+  font-size: 80%;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 70%;
+	border-radius: 5px;
+	-ms-transform: translate(20%, -0%);
+	transform: translate(21.4%, -0%);
+	margin-bottom: 30px;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Another custom global tailwindcss example. */
+.container {
+  @apply p-5;
+}
+
+.notes {
+	text-align: left;
+	background-color: #ddffdd;
+	border-left: 6px solid #4CAF50;
+}
+
+button {
+	@apply bg-blue-500 text-white font-bold py-2 px-4 rounded-full;
+}
+
+button:hover {
+  @apply bg-blue-700;
+}
+
+/* An example can be seen at the bottom of page one. */
+button:disabled {
+	@apply bg-red-600;
+}
+
+/* Click a button and don't let go. It will turn to a light-red (pinkish) color. */
+button:not(:disabled):active {
+	@apply bg-red-200;
+}
+
+/* When you click the button and it is in-focus it will change to the darkest shade of blue. */
+button:focus {
+	@apply bg-blue-900;
+}
+
 @tailwind utilities;
