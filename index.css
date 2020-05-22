@@ -684,8 +684,8 @@ button:disabled {
 
 button:not(:disabled):active {
   --bg-opacity: 1;
-  background-color: #fed7d7;
-  background-color: rgba(254, 215, 215, var(--bg-opacity));
+  background-color: #feb2b2;
+  background-color: rgba(254, 178, 178, var(--bg-opacity));
 }
 
 /* When you click the button and it is in-focus it will change to the darkest shade of blue. */
@@ -696,12 +696,20 @@ button:focus {
   background-color: rgba(42, 67, 101, var(--bg-opacity));
 }
 
+.block {
+  display: block;
+}
+
 .font-hairline {
   font-weight: 100;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.text-xs {
+  font-size: 0.75rem;
 }
 
 .text-sm {
@@ -743,6 +751,10 @@ button:focus {
 
 .static {
   position: static;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
