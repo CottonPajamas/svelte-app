@@ -51,7 +51,7 @@ button:disabled {
 
 /* Click a button and don't let go. It will turn to a light-red (pinkish) color. */
 button:not(:disabled):active {
-	@apply bg-red-200;
+	@apply bg-red-300;
 }
 
 /* When you click the button and it is in-focus it will change to the darkest shade of blue. */
