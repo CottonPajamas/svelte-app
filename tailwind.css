@@ -14,8 +14,9 @@ cite {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.2s;
-	border-radius: 5px;
+	border-radius: 15px;
 	margin-bottom: 30px;
+	background-color: var(--bg-panel);
 	/* width: 70%;
 	-ms-transform: translate(20%, -0%);
 	transform: translate(21.4%, -0%); */
@@ -27,13 +28,15 @@ cite {
 
 /* Another custom global tailwindcss example. */
 .notes {
-  @apply p-5;
+	@apply p-5;
+	/* Referencing to the css variable created in global.css */
+	color: var(--color-text);
 }
 
 .notes-content {
 	text-align: left;
-	background-color: #ddffdd;
-	border-left: 6px solid #4CAF50;
+	background-color: var(--bg-codeExample);
+	border-left: 6px solid var(--border-codeExample);
 }
 
 button {
