@@ -25,15 +25,15 @@
 
 <h2 class="text-orange-600 text-xl md:text-4xl italic">This is the home page.</h2>
 
-<div class="text-container" >
-    <h1>Light / Dark Mode</h1>
-    <div>
-      {#if document.documentElement.getAttribute("data-theme") == 'dark'}
-			  <input type="checkbox" checked id="switch" name="theme" on:click={toggleTheme}/>
-      {:else}
-			  <input type="checkbox" id="switch" name="theme" on:click={toggleTheme}/>
-      {/if}
-      <label for="switch">Toggle</label>
+<div class="text-container m-8 p-8 md:m-20 md:p-20" >
+  <h1>Light / Dark Mode</h1>
+  <div>
+    <label for="switch">Toggle</label>
+    {#if document.documentElement.getAttribute("data-theme") == 'dark'}
+      <input type="checkbox" checked id="switch" name="theme" on:click={toggleTheme}/>
+    {:else}
+      <input type="checkbox" id="switch" name="theme" on:click={toggleTheme}/>
+    {/if}
 	</div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus repellendus dolorem eum consequatur id exercitationem nesciunt, inventore modi perferendis impedit esse, tempora officia, ipsam quae libero. Nostrum, alias dignissimos.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus repellendus dolorem eum consequatur id exercitationem nesciunt, inventore modi perferendis impedit esse, tempora officia, ipsam quae libero. Nostrum, alias dignissimos.</p>
 </div>
