@@ -36,7 +36,12 @@ function getMessage(event) {
 function getMessageSupport(storageName, lang) {
 	let request = new XMLHttpRequest();
 	request.overrideMimeType("application/json");
-	request.open('GET', '/i18n/messages_' + lang + '.json', true);
+	if (window.location.hostname == 'localhost') {
+		request.open('GET', '/i18n/messages_' + lang + '.json', true);
+	} else {
+		// For github since it has that additional URL path
+		request.open('GET', '/svelte-app/i18n/messages_' + lang + '.json', true);
+	}
 	request.onload = function() {
 		if (request.responseText) {
 			msg = JSON.parse(request.responseText);
