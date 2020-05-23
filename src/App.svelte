@@ -35,7 +35,7 @@
 		<RouterLink page={{path: '/three', name: 'Page Three'}} />
 	</div>
 	<br>
-	<div id="pageContent" class="container">
+	<div id="pageContent" class="container max-w-xs md:max-w-4xl">
 		<!-- Page component updates here -->
 		<svelte:component this={router[$curRoute]} />
 	</div>

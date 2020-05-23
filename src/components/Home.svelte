@@ -25,7 +25,7 @@
 
 <h2 class="text-orange-600 text-xl md:text-4xl italic">This is the home page.</h2>
 
-<div class="text-container absolute m-8 p-8 md:m-20 md:p-20" >
+<div class="text-container m-5 p-5 md:m-10 md:p-10" >
   <h1>Light / Dark Mode</h1>
   <div>
     {#if document.documentElement.getAttribute("data-theme") == 'dark'}
