@@ -33,7 +33,7 @@ let data = {
 <br>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p><b>1. Proper way of setting new values to array/object. Randos counter: {randos.length}</b>
 			<br>
 			<cite>
@@ -44,7 +44,7 @@ let data = {
 				array push but also reassign the variable causing the app to react and update the DOM.
 			</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				let randos = [];
 				<br><br>
@@ -66,9 +66,9 @@ let data = {
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p><b>2. Looping with Svelte by using the 'each' block.</b></p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				-- Done in the html portion.<br>
 				&lbrace;#each randos as val, idx&rbrace;<br>
@@ -87,12 +87,12 @@ let data = {
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>3. Handle promises using the 'await' block.</b><br>
 			<cite>Useful when performing HTTP requests.</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				-- Done in the script portion.<br>
 				let rand = 0;<br>
@@ -126,7 +126,7 @@ let data = {
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>4. Using svelte/store as a global variable handler.</b><br>
 			<cite>
@@ -147,7 +147,7 @@ let data = {
 			- Data stored here is not persistent. Will be gone once page refreshes.
 		</p>
 		<br>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				-- Create a new store.js file in the 'src' folder and enter the following.<br>
 				import &lbrace; writable &rbrace; from 'svelte/store';<br>
@@ -169,7 +169,7 @@ let data = {
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>5. Passing objects from child component to the parent component using the Svelte spread syntax.</b>
 			<br>
@@ -177,7 +177,7 @@ let data = {
 				Parent component here will be this page two component while child component will be Child.svelte.
 			</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				-- Done in Child.svelte.<br>
 				&lsaquo;script&rsaquo;<br>

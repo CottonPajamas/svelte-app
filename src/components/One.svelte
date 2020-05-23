@@ -27,9 +27,9 @@
 <br>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p><b>1. Just outputting a simple private variable: {rando}</b></p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				-- Done in the script portion.<br>
 				let rando = 0;
@@ -43,13 +43,13 @@
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>2. Adding logic to our random output: {Math.round(rando) ? '🤗' : '👻'}</b>
 			<br>
 			<cite>If it rounds to 1 its a winner, if it rounds to 0 its a loser.</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				Adding logic to our random output: &lbrace; Math.round(rando) ? '🤗' : '👻' &rbrace;
 			</code>
@@ -59,7 +59,7 @@
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>3. Simplifying code reuse: {result} | {result} | {result} | {result}</b>
 			<br>
@@ -74,7 +74,7 @@
 				Best way for such situations would be to define the computed value using '$'. This will tell Svelte to calculate this value when the value 'rando' changes.
 			</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				-- Done in the script portion, just once.<br>
 				$: result = Math.round(rando) ? '🤗' : '👻';
@@ -89,7 +89,7 @@
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>4. Binding attributes to DOM elements: {Math.round(rando) ? '🤗' : '👻'}</b>
 			<br>
@@ -98,7 +98,7 @@
 				This will directly change the value of the variable whenever the value of the given input box changes.
 			</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				&lsaquo;input bind:value=&lbrace; rando &rbrace;&rsaquo;
 			</code>
@@ -108,7 +108,7 @@
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>5. Advance on:event directive: {Math.round(rando) ? '🤗' : '👻'}</b>
 			<br>
@@ -117,7 +117,7 @@
 				generating a number between the min and max values specified in the function parameters and setting it to the 'rando' variable.
 			</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				&lsaquo;button on:click=&lbrace;() => setVal(genRandom(0.51, 0.74))&rbrace;&rsaquo;Btw 0.76 to 1&lsaquo;/button&rsaquo;
 			</code>
@@ -133,7 +133,7 @@
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>6. Dynamically changing page template using if-else if-else syntax.</b>
 			<br>
@@ -141,7 +141,7 @@
 				Think JSP Standard Tag Library (JSTL) but for Svelte.
 			</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				&lbrace;#if rando &rsaquo; 0.75&rbrace;<br>
 					&emsp;&emsp;&lsaquo;p&rsaquo;Value is more than 0.75.&lsaquo;/p&rsaquo;<br>
@@ -169,7 +169,7 @@
 </div>
 
 <div class="card">
-	<div class="container">
+	<div class="notes">
 		<p>
 			<b>7. Using Svelte's transition directives</b>
 			<br>
@@ -177,7 +177,7 @@
 				These are directives that allows you to compute css animations based on the logic in your page.
 			</cite>
 		</p>
-		<div class="notes">
+		<div class="notes-content">
 			<code>
 				-- Done in the script portion. Will need to import the transition library.<br>
 				import &lbrace; fade, fly &rbrace; from 'svelte/transition';
