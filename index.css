@@ -732,8 +732,16 @@ button:focus {
   margin: 0;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-1 {
@@ -812,6 +820,14 @@ button:focus {
 
   .md\:text-6xl {
     font-size: 4rem;
+  }
+
+  .md\:m-20 {
+    margin: 5rem;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
   }
 }
 

@@ -33,8 +33,6 @@ body {
 
 .text-container {
   background-color: var(--bg-panel);
-  margin: 4em;
-  padding: 4em;
   border-radius: 15px;
   display: grid;
   grid-template-columns: 80% auto;
