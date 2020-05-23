@@ -246,6 +246,6 @@
 <style>
 	/* 
 		Any custom css written here will only be accessible from this component only.
-		To allow sharing of custom css, add inside the global css instead.
+		To allow sharing of custom css, add inside the global.css or tailwind.css files instead.
 	*/
 </style>

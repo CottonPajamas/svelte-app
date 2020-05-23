@@ -8,7 +8,3 @@
 </div>
 <br>
 
-
-<style>
-
-</style>

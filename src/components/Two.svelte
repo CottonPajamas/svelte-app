@@ -206,7 +206,3 @@ let data = {
 		<Child {...data} />
 	</div>
 </div>
-
-<style>
-
-</style>
