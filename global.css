@@ -8,7 +8,10 @@ html {
 	/* Default theme here is white with dark blue headers. */
   --bg: #fcfcfc;
   --bg-panel: #ebebeb;
-  --color-headings: #0077ff;
+  --color-mainHeader: rgba(255, 0, 0, 0.698);
+  --color-navHeader: rgba(255, 0, 85, 0.596);
+  --color-pageHeader: rgb(255, 115, 0);
+  --color-subHeadings: #0077ff;
   --color-text: #333333;
 }
 
@@ -16,8 +19,26 @@ html {
 html[data-theme="dark"] {
   --bg: #333333;
   --bg-panel: #434343;
-  --color-headings: #3694ff;
+  --color-mainHeader: rgba(248, 39, 39, 0.945);
+  --color-navHeader: rgba(255, 90, 145, 0.945);
+  --color-pageHeader: rgb(255, 167, 24);
+  --color-subHeadings: #3694ff;
   --color-text: #b5b5b5;
+}
+
+/* Main title header - just holds the color in a separate css class to easily change btw light and dark mode. */
+.title-header {
+  color: var(--color-mainHeader);
+}
+
+/* Nav bar color */
+.nav-header {
+  color: var(--color-navHeader);
+}
+
+/* Page header color */
+.page-header {
+  color: var(--color-pageHeader);
 }
 
 body {
@@ -42,7 +63,7 @@ body {
 }
 .text-container h1 {
   margin: 0;
-  color: var(--color-headings);
+  color: var(--color-subHeadings);
 }
 .text-container p {
   color: var(--color-text);
@@ -82,7 +103,7 @@ label:after {
 }
 
 input:checked + label {
-  background: var(--color-headings);
+  background: var(--color-subHeadings);
 }
 
 input:checked + label:after {
