@@ -1,0 +1,40 @@
+{
+  "app": {
+    "title": "HOLA",
+    "navbar": {
+      "homepage": "Casa",
+      "pageone": "Página uno",
+      "pagetwo": "Página dos",
+      "pagethree": "Página tres"
+    },
+    "homepage": {
+      "pageheader": "Esta es la página principal."
+    },
+    "pageone": {
+      "pageheader": "Algunas cosas básicas sobre cómo usar Svelte :D"
+    },
+    "pagetwo": {
+      "pageheader": "Más cosas sobre el uso de Svelte :P"
+    },
+    "pagethree": {
+      "pageheader": "Jugar con API de almacenamiento web HTML"
+    }
+  },
+  "comments": {
+    "actions": {
+      "approve": {
+        "all": {
+          "success": "All comments in this discussion are approved."
+        },
+        "one": {
+          "success": "Comment approved."
+        }
+      }
+    },
+    "members": {
+      "phrases": {
+        "someone-plus-others": "{{someone}} + {{countOthers}} others"
+      }
+    }
+  }
+}

@@ -22,7 +22,17 @@
 	<script defer src='build/bundle.js'></script>
 
 	<!-- IMPT: Add this below to link the page to the manifest file -->
-  <link rel="manifest" href="manifest.json">
+	<link rel="manifest" href="manifest.json">
+	
+	<script>
+		// Put the setting of the theme at the very start of the application
+		window.addEventListener('DOMContentLoaded', (event) => {
+			var val = window.localStorage.getItem('APP_THEME');
+			if (val == 'dark') {
+				document.documentElement.setAttribute("data-theme", "dark");
+			}
+		});
+	</script>
 </head>
 
 <body>
