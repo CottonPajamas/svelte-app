@@ -1,4 +1,6 @@
 <script>
+export let msg;
+
 let storageObjectName = 'TEST_TOKEN';
 
 // Testing localStorage object
@@ -41,7 +43,7 @@ let sessionStorageValue = getFromSessionStorage();
 </script>
 
 <div class="page-header italic text-base md:text-xl">
-  Playing with HTML Web Storage API
+  {msg.app.pagethree.pageheader}
 </div>
 <br>
 

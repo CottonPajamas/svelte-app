@@ -1,4 +1,6 @@
 <script>
+export let msg;
+
 import { globalValue } from '../store';
 import Child from './Child.svelte';
 
@@ -28,7 +30,7 @@ let data = {
 </script>
 
 <div class="page-header italic text-base md:text-xl">
-	Moar stuff on using Svelte :P
+	{msg.app.pagetwo.pageheader}
 </div>
 <br>
 

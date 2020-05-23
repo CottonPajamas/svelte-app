@@ -1,28 +1,30 @@
 <script>
-	// These are directives that allows you to compute css animations based on the logic in your page.
-	import { fade, slide, blur, fly } from 'svelte/transition';
+export let msg;
 
-	// If we don't specify the 'export' keyword, we will have a private variable within this component. (Think export=public in Java and no export = private.)
-	let rando = 0;
+// These are directives that allows you to compute css animations based on the logic in your page.
+import { fade, slide, blur, fly } from 'svelte/transition';
 
-	// Here we are defining the computed value using '$'. This will tell Svelte to calculate this value when this app reacts. Result stored here would be a string containing the emoji.
-	$: result = Math.round(rando) ? '🤗' : '👻';
+// If we don't specify the 'export' keyword, we will have a private variable within this component. (Think export=public in Java and no export = private.)
+let rando = 0;
 
-	function setRando() {			// Create a function to randomly populate our private variable.
-		rando = Math.random();
-	}
+// Here we are defining the computed value using '$'. This will tell Svelte to calculate this value when this app reacts. Result stored here would be a string containing the emoji.
+$: result = Math.round(rando) ? '🤗' : '👻';
 
-	function setRandoVal(val) {
-		rando = val;
-	}
+function setRando() {			// Create a function to randomly populate our private variable.
+	rando = Math.random();
+}
 
-	function genRandom(min, max) {
-		return Math.random()*(max-min)+min;
-	}
+function setRandoVal(val) {
+	rando = val;
+}
+
+function genRandom(min, max) {
+	return Math.random()*(max-min)+min;
+}
 </script>
 
 <div class="page-header italic text-base md:text-xl">
-	Some basic stuff on how to use Svelte :D
+	{msg.app.pageone.pageheader}
 </div>
 <br>
 
