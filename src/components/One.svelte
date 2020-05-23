@@ -21,7 +21,7 @@
 	}
 </script>
 
-<div class="text-orange-700 italic text-base md:text-xl">
+<div class="page-header italic text-base md:text-xl">
 	Some basic stuff on how to use Svelte :D
 </div>
 <br>

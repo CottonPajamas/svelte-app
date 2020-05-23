@@ -27,8 +27,8 @@
 <!-- Event handler to handle 'back' button events -->
 <svelte:window on:popstate={handlerBackNavigation} />
 <main class="text-center px-1 m-0">
-	<h1 class="uppercase font-hairline m-0 p-4 text-red-600 text-5xl md:text-6xl lg:text-6xl">Hello {name}!</h1>
-	<div class="font-medium text-red-800 text-sm md:text-base lg:text-base pl-4 pr-4">
+	<h1 class="title-header uppercase font-hairline m-0 p-4 text-5xl md:text-6xl lg:text-6xl">Hello {name}!</h1>
+	<div class="nav-header font-medium text-sm md:text-base lg:text-base pl-4 pr-4">
 		<RouterLink page={{path: '/', name: 'Home'}} />&emsp;&emsp;|&emsp;&emsp;
 		<RouterLink page={{path: '/one', name: 'Page One'}} />&emsp;&emsp;|&emsp;&emsp;
 		<RouterLink page={{path: '/two', name: 'Page Two'}} />&emsp;&emsp;|&emsp;&emsp;

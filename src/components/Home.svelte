@@ -23,7 +23,7 @@
   };
 </script>
 
-<h2 class="text-orange-600 text-xl md:text-4xl italic">This is the home page.</h2>
+<h2 class="page-header text-xl md:text-4xl italic">This is the home page.</h2>
 
 <div class="text-container m-5 p-5 md:m-10 md:p-10" >
   <h1>Light / Dark Mode</h1>
