@@ -29,11 +29,24 @@
   <h1>Light / Dark Mode</h1>
   <div>
     {#if document.documentElement.getAttribute("data-theme") == 'dark'}
-      <input hidden type="checkbox" checked id="switch" name="theme" on:click={toggleTheme}/>
+      <input hidden type="checkbox" checked id="themeSwitch" name="theme" on:click={toggleTheme}/>
     {:else}
-      <input hidden type="checkbox" id="switch" name="theme" on:click={toggleTheme}/>
+      <input hidden type="checkbox" id="themeSwitch" name="theme" on:click={toggleTheme}/>
     {/if}
-    <label for="switch">Toggle</label>
+    <label for="themeSwitch">Toggle</label>
+	</div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus repellendus dolorem eum consequatur id exercitationem nesciunt, inventore modi perferendis impedit esse, tempora officia, ipsam quae libero. Nostrum, alias dignissimos.</p>
+</div>
+
+<div class="text-container m-5 p-5 md:m-10 md:p-10" >
+  <h1>English / Spanish</h1>
+  <div>
+    {#if document.documentElement.getAttribute("data-theme") == 'dark'}
+      <input hidden type="checkbox" checked id="langSwitch" name="lang" on:click={toggleTheme}/>
+    {:else}
+      <input hidden type="checkbox" id="langSwitch" name="lang" on:click={toggleTheme}/>
+    {/if}
+    <label for="langSwitch">Toggle</label>
 	</div>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus repellendus dolorem eum consequatur id exercitationem nesciunt, inventore modi perferendis impedit esse, tempora officia, ipsam quae libero. Nostrum, alias dignissimos.</p>
 </div>
