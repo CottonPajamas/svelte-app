@@ -8,6 +8,8 @@ html {
 	/* Default theme here is white with dark blue headers. */
   --bg: #fcfcfc;
   --bg-panel: #ebebeb;
+  --bg-codeExample: rgb(223, 250, 251);
+  --border-codeExample: rgb(42, 145, 155);
   --color-mainHeader: rgba(255, 0, 0, 0.698);
   --color-navHeader: rgba(255, 0, 85, 0.596);
   --color-pageHeader: rgb(255, 115, 0);
@@ -19,6 +21,8 @@ html {
 html[data-theme="dark"] {
   --bg: #333333;
   --bg-panel: #434343;
+  --bg-codeExample: rgb(131, 244, 248);
+  --border-codeExample: rgb(21, 111, 119);
   --color-mainHeader: rgba(248, 39, 39, 0.945);
   --color-navHeader: rgba(255, 90, 145, 0.945);
   --color-pageHeader: rgb(255, 167, 24);
