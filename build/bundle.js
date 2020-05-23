@@ -754,7 +754,7 @@ var app = (function () {
     			attr_dev(input, "type", "checkbox");
     			attr_dev(input, "id", "switch");
     			attr_dev(input, "name", "theme");
-    			add_location(input, file, 33, 6, 1212);
+    			add_location(input, file, 33, 6, 1203);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, input, anchor);
@@ -792,7 +792,7 @@ var app = (function () {
     			input.checked = true;
     			attr_dev(input, "id", "switch");
     			attr_dev(input, "name", "theme");
-    			add_location(input, file, 31, 6, 1106);
+    			add_location(input, file, 31, 6, 1097);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, input, anchor);
@@ -856,12 +856,12 @@ var app = (function () {
     			p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus repellendus dolorem eum consequatur id exercitationem nesciunt, inventore modi perferendis impedit esse, tempora officia, ipsam quae libero. Nostrum, alias dignissimos.";
     			attr_dev(h2, "class", "text-orange-600 text-xl md:text-4xl italic");
     			add_location(h2, file, 25, 0, 844);
-    			add_location(h1, file, 28, 2, 993);
+    			add_location(h1, file, 28, 2, 984);
     			attr_dev(label, "for", "switch");
-    			add_location(label, file, 35, 4, 1306);
-    			add_location(div0, file, 29, 2, 1022);
-    			add_location(p, file, 37, 2, 1351);
-    			attr_dev(div1, "class", "text-container absolute m-8 p-8 md:m-20 md:p-20");
+    			add_location(label, file, 35, 4, 1297);
+    			add_location(div0, file, 29, 2, 1013);
+    			add_location(p, file, 37, 2, 1342);
+    			attr_dev(div1, "class", "text-container m-5 p-5 md:m-10 md:p-10");
     			add_location(div1, file, 27, 0, 928);
     		},
     		l: function claim(nodes) {
@@ -4339,7 +4339,7 @@ var app = (function () {
     			add_location(div0, file$6, 30, 1, 1191);
     			add_location(br, file$6, 36, 1, 1583);
     			attr_dev(div1, "id", "pageContent");
-    			attr_dev(div1, "class", "container");
+    			attr_dev(div1, "class", "container max-w-xs md:max-w-4xl");
     			add_location(div1, file$6, 37, 1, 1589);
     			attr_dev(main, "class", "text-center px-1 m-0 svelte-1w5elwo");
     			add_location(main, file$6, 28, 0, 1044);
