@@ -13,12 +13,12 @@ cite {
 
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	width: 70%;
+	transition: 0.2s;
 	border-radius: 5px;
-	-ms-transform: translate(20%, -0%);
-	transform: translate(21.4%, -0%);
 	margin-bottom: 30px;
+	/* width: 70%;
+	-ms-transform: translate(20%, -0%);
+	transform: translate(21.4%, -0%); */
 }
 
 .card:hover {
@@ -26,11 +26,11 @@ cite {
 }
 
 /* Another custom global tailwindcss example. */
-.container {
+.notes {
   @apply p-5;
 }
 
-.notes {
+.notes-content {
 	text-align: left;
 	background-color: #ddffdd;
 	border-left: 6px solid #4CAF50;
