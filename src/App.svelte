@@ -49,10 +49,15 @@ function getMessageSupport(storageName, lang) {
 				window.localStorage.setItem(storageName, lang);
 			}
 		}
-		// console.log(msg);
-		// console.log(msg.comments.actions.approve.all.success);
 	};
 	request.send();
+}
+
+// You may want to put a loading screen here if you detect that the user is not using english. This is to cater some time to load the correct language texts.
+var currentLang = window.localStorage.getItem('APP_LANGUAGE');
+if (currentLang && currentLang != 'en') {
+	alert(1);
+	// Add loading screen here	
 }
 
 // Alternative to onload event - USEFUL for Svelte cos everything is pre-compiled
@@ -62,6 +67,7 @@ window.document.onreadystatechange = function () {
 		var val = window.localStorage.getItem('APP_LANGUAGE');
 		if (val) {
 			getMessageSupport(null, val);
+			// Place to remove the loading screen
 		}
 	}
 }
