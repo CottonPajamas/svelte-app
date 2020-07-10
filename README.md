@@ -1,3 +1,5 @@
+## Static progressive web application (PWA) built with Svelte
+
 *Want to view deployed app? Go here --> [Svelte app deployed to GitHub Pages](https://cottonpajamas.github.io/svelte-app/)*
 
 ---
